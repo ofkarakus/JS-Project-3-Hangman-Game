@@ -1,0 +1,36 @@
+body {
+    background-color: #34495E ;
+    color: white;
+    text-align: center;
+}
+
+#desc {
+    margin-bottom: 5rem;
+}
+
+#hang {
+    margin-right: 10rem;
+
+}
+
+#notify {
+    display: inline-block;
+    align-self: flex-start;
+}
+
+#mainContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+#letterBaseSVG {
+    text-align: center;
+    width: fit-content;
+}
+
+#hiddenWord {
+    letter-spacing: 19px;
+    font-size: large;
+}

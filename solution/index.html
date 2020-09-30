@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Hangman Game</title>
+  </head>
+  <body>
+    <h1>Hangman</h1>
+    <p id="desc">Find the hidden word - Enter a letter</p>
+
+    <div id="mainContent">
+      <svg id="hang" height="210" width="165">
+        <line
+          x1="40"
+          y1="0"
+          x2="40"
+          y2="200"
+          style="stroke: white; stroke-width: 5"
+        />
+        <line
+          x1="0"
+          y1="200"
+          x2="80"
+          y2="200"
+          style="stroke: white; stroke-width: 5"
+        />
+        <line
+          x1="40"
+          y1="0"
+          x2="130"
+          y2="0"
+          style="stroke: white; stroke-width: 5"
+        />
+        <line
+          x1="130"
+          y1="0"
+          x2="130"
+          y2="35"
+          style="stroke: white; stroke-width: 5"
+        />
+
+        <circle
+          id="head"
+          cx="130"
+          cy="55"
+          r="20"
+          stroke="white"
+          stroke-width="4"
+          fill="none"
+        />
+        <line
+          id="body"
+          x1="130"
+          y1="75"
+          x2="130"
+          y2="150"
+          style="stroke: white; stroke-width: 5"
+        />
+        <line
+          id="rightArm"
+          x1="130"
+          y1="115"
+          x2="155"
+          y2="95"
+          style="stroke: white; stroke-width: 5"
+          stroke-linecap="round"
+        />
+        <line
+          id="leftArm"
+          x1="130"
+          y1="115"
+          x2="105"
+          y2="95"
+          style="stroke: white; stroke-width: 5"
+          stroke-linecap="round"
+        />
+        <line
+          id="leftLeg"
+          x1="130"
+          y1="148"
+          x2="105"
+          y2="175"
+          style="stroke: white; stroke-width: 5"
+          stroke-linecap="round"
+        />
+        <line
+          id="rightLeg"
+          x1="130"
+          y1="148"
+          x2="155"
+          y2="175"
+          style="stroke: white; stroke-width: 5"
+          stroke-linecap="round"
+        />
+      </svg>
+
+      <div id="notify">
+        <p id="wrong">wrong</p>
+        <p id="letters">a,b</p>
+      </div>
+    </div>
+
+    <div id="inputSection">
+      <p id="hiddenWord"></p>
+      <div id="lineContainer">
+        <svg id="letterBaseSVG" height="10" width="auto">
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
