@@ -1,36 +1,119 @@
 body {
-    background-color: #34495E ;
-    color: white;
-    text-align: center;
+  background-color: #34495e;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+  font-family: "Lato", sans-serif;
+  display: -ms-grid;
+  display: grid;
 }
 
 #desc {
-    margin-bottom: 5rem;
+  margin-bottom: 5rem;
+  font-size: larger;
 }
 
-#hang {
-    margin-right: 10rem;
+#enteredLetters {
+  font-size: large;
+}
 
+#message {
+  font-size: large;
+}
+
+#scaffold {
+  margin-right: 10rem;
 }
 
 #notify {
-    display: inline-block;
-    align-self: flex-start;
+  display: inline-block;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
 }
 
 #mainContent {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 5rem;
 }
 
-#letterBaseSVG {
-    text-align: center;
-    width: fit-content;
+.letter {
+  border-bottom: 3px solid #2980b9;
+  width: 20px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 5px;
 }
 
-#hiddenWord {
-    letter-spacing: 19px;
-    font-size: large;
+.warning-popup {
+  position: absolute;
+  margin: 10px auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 250px;
+  display: inline-block;
+  border: hidden 1px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.514);
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
 }
+
+.moved {
+  bottom: -50px !important;
+}
+
+#alertBox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 999;
+  background-color: #297fb9d7;
+  color: white;
+  width: 20rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+#alertBox p:nth-child(1) {
+  font-family: "Lato", sans-serif;
+  font-size: x-large;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+#alertBox p:nth-child(2) {
+  font-family: "Lato", sans-serif;
+  font-size: large;
+  font-weight: 500;
+}
+
+#alertBox button {
+  margin-bottom: 1rem;
+  padding: 10px 15px;
+  font-size: medium;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: #2980b9;
+}
+/*# sourceMappingURL=style.css.map */
